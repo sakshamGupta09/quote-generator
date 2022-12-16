@@ -1,14 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Quote Generator" />
+    <meta name="description" content="Quote Generator by Saksham Gupta" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Quote Generator" />
+    <meta property="og:url" content="https://sakshamgupta.vercel.app/" />
+    <meta
+      property="og:description"
+      content="Quote Generator by Saksham Gupta"
+    />
+    <meta
+      property="og:image"
+      content="https://sakshamgupta.vercel.app/assets/images/manOnTable.svg"
+    />
+    <meta property="og:site_name" content="Quote Generator" />
+    <meta name="twitter:title" content="Quote Generator by Saksham Gupta" />
+    <meta
+      name="twitter:description"
+      content="Quote Generator by Saksham Gupta"
+    />
+    <meta
+      name="twitter:image"
+      content="https://sakshamgupta.vercel.app/assets/images/manOnTable.svg"
+    />
     <title>Quote Generator</title>
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <header class="header">
+      <p class="font-bold mr-6 titlecase" id="theme-type"></p>
+      <span class="text-xl mr-6">
+        <i class="far fa-sun" id="theme-icon"></i>
+      </span>
+      <div>
+        <label class="switch">
+          <input type="checkbox" id="theme-switch" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </header>
+    <section class="quote__container">
+      <div class="quote" id="quote-container">
+        <p class="quote__text text-3xl font-bold" id="quote-text"></p>
+        <p class="quote__author text-2xl font-bold mt-5" id="quote-author"></p>
+        <button class="btn quote__btn mt-5 cursor-pointer" id="new-quote">
+          New quote
+        </button>
+      </div>
+      <img src="/assets/spinner.svg" alt="Loading quote" id="loader" />
+    </section>
     <script src="/scripts/index.js"></script>
   </body>
 </html>
