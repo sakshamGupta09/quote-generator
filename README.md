@@ -4,7 +4,7 @@
 
 ## Project description
 
-This is a vanilla JS project which uses [this quotes API](https://api-ninjas.com/api/quotes) to fetch a random quote and diaplay it on to the UI along with the author name and a button to get a new quote.
+This is a vanilla JS project which uses [this quotes API](https://api-ninjas.com/api/quotes) to fetch a random quote and display it on to the UI along with the author name and a button to get a new quote.
 
 ## Key Features
 
